@@ -1,0 +1,26 @@
+{
+    "format_version": 1,
+    "imports": [
+        {
+            "target_table": "ISO.COUNTRIES",
+            "source_data": {
+                "data_type": "CSV",
+                "file_name": "countries.csv",
+                "has_header": true
+            },
+            "import_settings": {
+                "import_columns": [
+                    "NAME",
+					"ALPHA2",
+					"ALPHA3",
+					"CODE",
+					"ISO",
+					"REGION",
+					"SUB_REGION",
+					"REGION_CODE",
+					"SUB_REGION_CODE"
+                ]
+            }
+        }
+    ]
+}

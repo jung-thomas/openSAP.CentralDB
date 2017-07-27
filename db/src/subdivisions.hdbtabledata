@@ -1,0 +1,21 @@
+{
+    "format_version": 1,
+    "imports": [
+        {
+            "target_table": "ISO.SUBDIVISIONS",
+            "source_data": {
+                "data_type": "CSV",
+                "file_name": "subdivisions.csv",
+                "has_header": true
+            },
+            "import_settings": {
+                "import_columns": [
+                    "COUNTRY_CODE.ALPHA2",
+					"SUB_CODE",
+					"NAME",
+					"TYPE"
+                ]
+            }
+        }
+    ]
+}
