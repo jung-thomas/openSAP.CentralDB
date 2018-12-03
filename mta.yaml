@@ -1,20 +1,18 @@
 ID: openSAP.CentralDB
 _schema-version: '2.0'
 description: openSAP HANA7 Course Central DB Project
-version: 1.0.2019
-
+version: 1.1.2019
 modules:
- - name: db
-   type: hdb
-   path: db
-   requires:
-    - name: opensap-central-container
-
+  - name: db
+    type: hdb
+    path: db
+    requires:
+      - name: opensap-central-container
 resources:
- - name: opensap-central-container
-   parameters:
+  - name: opensap-central-container
+    parameters:
       config:
-         schema: OPENSAP_CENTRAL_DB
-   properties:
-      hdi-container-name: ${service-name}
-   type: com.sap.xs.hdi-container
+        schema: OPENSAP_CENTRAL_DB
+    properties:
+      hdi-container-name: '${service-name}'
+    type: com.sap.xs.hdi-container

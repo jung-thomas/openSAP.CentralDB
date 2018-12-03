@@ -1,8 +1,12 @@
 {
 	"role":{
 		"name": "admin#",
-		"schema_roles": [{
-		 "names": ["consumption"]
-		}] 
+		"schema_privileges": [{
+		   "privileges_with_grant_option": ["SELECT METADATA", 
+		    			  "SELECT CDS METADATA", 
+		    			  "SELECT"
+		    			  
+		   ]
+		}]
 	}
 }
