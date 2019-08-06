@@ -1,7 +1,7 @@
 ID: openSAP.CentralDB
 _schema-version: '2.0'
 description: openSAP HANA7 Course Central DB Project
-version: 1.1.2019
+version: 1.9.2019
 modules:
   - name: db
     type: hdb
